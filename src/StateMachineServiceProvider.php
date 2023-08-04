@@ -1,18 +1,13 @@
 <?php
 
-namespace JobMetric\Translation;
+namespace JobMetric\StateMachine;
 
 use Illuminate\Support\ServiceProvider;
-use JobMetric\StateMachine\StateMachineService;
 
 class StateMachineServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->bind('JStateMachine', function ($app) {
-            return new StateMachineService($app);
-        });
-
         $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'j-state-machine');
     }
 

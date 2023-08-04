@@ -49,10 +49,7 @@
         "laravel": {
             "providers": [
                 "JobMetric\\StateMachine\\StateMachineServiceProvider"
-            ],
-            "aliases": {
-                "JStateMachine": "JobMetric\\StateMachine\\Facades\\StateMachineService"
-            }
+            ]
         }
     },
     "minimum-stability": "stable",
